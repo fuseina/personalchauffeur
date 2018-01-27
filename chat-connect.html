@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Personal Chauffeur: Connect</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#ee6e73">
+  <meta name="msapplication-navbutton-color" content="#ee6e73">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body onLoad="displayChatMessages();">
+
+
+<!--bit of CSS for Info box-->
+  <html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+  body {
+    background-image: url('images/round.png')
+
+  }
+
+
+</style>
+</head>
+
+
+
+
+<!--Top Navigation-->
+<nav class="red-text text-lighten-5" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="home.html" class="brand-logo">The Personal Chauffeur</a>
+
+       <ul class="right hide-on-med-and-down ">
+        <li ><a class="login" id = "logOutLinkId" onclick="logout();">Log Out </a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="about" href="schedule.html">Schedule</a></li>
+      </ul>
+       <ul class="right hide-on-med-and-down">
+        <li><a class="Home" href="profile.html">My Profile</a></li>
+      </ul>
+        <ul class="right hide-on-med-and-down">
+        <li><a class="Home" href="profilepage.html">Home</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+  </nav>
+
+  <!--Header-->
+  <div class="parallax-container valign-wrapper">
+    <div class="container">
+      <div class="icon-block">
+        <div class="caption center-align teal-text text-lighten-2">
+          <h2 class="center teal-text text-lighten-3"><i class=" large material-icons">people</i></h2>
+          <h1 style="font-size: 90px;">Connect</h1>
+          <h5 class="center teal-text text-lighten-2">Start Chatting, Connect With Your Community!</h5>
+        </div>
+          <div class="parallax"><img src="images/4.jpg" style="opacity: 0.8;"> 
+        </div>
+      </div>
+  </div>
+</div>
+
+  <!-- Message Area-->
+<br><br>
+      <!--Text Area-->
+<div class="container">
+<div class="icon-block">
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12" id="chatbox" style="background-color: white;">
+        </div>
+      </div>
+    </form>
+  </div>
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="input-message" class="materialize-textarea"></textarea>
+          <label for="input-message">Message</label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+  <!--Send Button-->
+
+  <button class="btn waves-effect waves-light" type="submit" name="action" id="submitChat">Submit
+   </form>
+          <form id="image-form" action="#">
+            <input id="mediaCapture" type="file" accept="image/*,capture=camera">
+            
+          </form>
+        </div>
+      </div>
+
+      <div id="must-signin-snackbar" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+
+
+
+
+
+<!--Bottom Quote-->
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 center grey-text text-darken-2"
+          >Personal Chauffeur, there's no better way.<br>
+          The Drive of the New Generation.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/6.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+<!--Footer-->
+
+      <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">The Personal Chauffeur</h5>
+          <br>
+          <p class="grey-text text-lighten-4"><br>We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+       
+      </div>
+    </div>
+    <div class="footer-copyright">
+      
+    </div>
+  </footer>
+
+
+<!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <script src="js/project.js"></script>
+
+  </body>
+</html>
