@@ -203,7 +203,7 @@ function sendTextMessage(phoneNumberToNotify){
   function logout(){
     currentUser = null;
     localStorage.removeItem("currentUser");
-    window.location.replace("home.html");
+    window.location.replace("index.html");
  }
 
 
@@ -235,7 +235,7 @@ function sendTextMessage(phoneNumberToNotify){
  function profileInfoInitialLoad(){
   currentUser = JSON.parse(localStorage.getItem("currentUser"));
   if (currentUser ==null){ //not signed in, go back to home page
-    window.location.replace("home.html");
+    window.location.replace("index.html");
   } else {
     $("#logOutLinkId").text("Log Out, "+currentUser.firstName);
     $("#input-firstName").val(currentUser.firstName);
@@ -258,7 +258,7 @@ function sendTextMessage(phoneNumberToNotify){
  function menuBarInit(){
     currentUser = JSON.parse(localStorage.getItem("currentUser"));
     if (currentUser == null){ //not signed in, go back to home page
-      window.location.replace("home.html");
+      window.location.replace("index.html");
     } else {
       $("#logOutLinkId").text("Log Out, "+currentUser.firstName);
     }
