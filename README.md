@@ -13,6 +13,6 @@ Now everyone can have a Personal Chauffeur with The Personal Chauffeur! Your dig
 
 
 Technologies: jQuery, HTML5, CSS3, Materialize, FireBase, MaqQuest API
-•	Online scheduling assistant that monitors road conditions and alerts users when they must depart in order to arrive at their destination on time.
-•	Allows logged in users to chat with one another.
-•	Allows users to send an alert to others requesting a ride for upcoming meetings.
+*Online scheduling assistant that monitors road conditions and alerts users when they must depart in order to arrive at their destination on time.
+*Allows logged in users to chat with one another.
+*Allows users to send an alert to others requesting a ride for upcoming meetings.
